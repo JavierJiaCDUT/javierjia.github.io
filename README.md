@@ -1,14 +1,12 @@
-# My Personal Website
+# Javier Jia's Personal Blog
 
 [![Built with Astro](https://astro.badg.es/v2/built-with-astro/tiny.svg)](https://astro.build)
-[![Lint, Format, and Type Check](https://github.com/yashjawale/yashjawale.github.io/actions/workflows/lint.yml/badge.svg)](https://github.com/yashjawale/yashjawale.github.io/actions/workflows/lint.yml)
-[![Deploy to GitHub Pages](https://github.com/yashjawale/yashjawale.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/yashjawale/yashjawale.github.io/actions/workflows/deploy.yml)
 
-Website for sharing my thoughts on whatever I find interesting with the world!
+A site for sharing my thoughts & experiments with the world!
 
 ![Homepage Screenshot](./screenshot.png)
 
-Visit at [https://yashjawale.github.io/](https://yashjawale.github.io/)
+Visit at [https://javierjia.github.io/](https://javierjia.github.io/)
 
 ## Features
 
@@ -32,7 +30,3 @@ Visit at [https://yashjawale.github.io/](https://yashjawale.github.io/)
 - Add cover image at `src/assets/blogimages/<YOUR_SLUG>/cover.jpg` - Recommended dimensions: `853x480px`
 - For adding images to content, use the folowing syntax for caption support `![Alt text](../../assets/blogimages/<YOUR_SLUG>/imagename.ext)`
 - Create a PR & merge after passing workflow checks
-
----
-
-<a href="https://yashjawale.github.io/" target="_blank"><img style="height: 22px;" src="https://raw.githubusercontent.com/yashjawale/.github/main/docs/logo.svg" alt="Yash Jawale"/></a>

@@ -5,10 +5,10 @@ export async function GET(context) {
 	const blog = await getCollection('blog')
 	return rss({
 		// `<title>` field in output xml
-		title: 'Yash Jawale',
+		title: 'Javier Jia',
 		// `<description>` field in output xml
 		description:
-			'Website for sharing my thoughts on whatever I find interesting with the world',
+			'A site for sharing my thoughts & experiments with the world',
 		// Pull in your project "site" from the endpoint context
 		// https://docs.astro.build/en/reference/api-reference/#site
 		site: context.site,

@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is an Astro-based personal website and blog built with TypeScript, Tailwind CSS, and MDX. The site is deployed to GitHub Pages and features automatic reading time calculation, last-modified timestamps via git history, RSS feeds, and dark mode support.
+This is Javier Jia's personal blog - an Astro-based website built with TypeScript, Tailwind CSS, and MDX. The site is deployed to GitHub Pages at https://javierjia.github.io and features automatic reading time calculation, last-modified timestamps via git history, RSS feeds, and dark mode support.
 
 ## Essential Commands
 
