@@ -94,3 +94,4 @@ tar zxvf clouddrive-2-macos-$ARCH-$VERSION.tgz
 #### 自启动配置
 
 可以将 clouddrive 运行加入系统自启动，或者设置为系统服务，具体操作请参考操作系统帮助。
+w
