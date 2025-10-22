@@ -5,7 +5,7 @@ export const SITE_TITLE = 'Javier Jia'
 export const SITE_DESCRIPTION =
 	'A site for sharing my thoughts & experiments with the world.'
 
-export const SocialLinks = [
+export const SocialLinks: { name: string; url: string }[] = [
 	// TBD: Add social media links here
 	// Example:
 	// {
