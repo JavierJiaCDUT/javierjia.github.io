@@ -6,12 +6,10 @@ export const SITE_DESCRIPTION =
 	'A site for sharing my thoughts & experiments with the world.'
 
 export const SocialLinks: { name: string; url: string }[] = [
-	// TBD: Add social media links here
-	// Example:
-	// {
-	// 	name: 'GitHub',
-	// 	url: 'https://github.com/javierjia',
-	// },
+	{
+		name: 'GitHub',
+		url: 'https://github.com/JavierJiaCDUT',
+	},
 ]
 
 export const WebsiteLinks = [
@@ -24,7 +22,7 @@ export const WebsiteLinks = [
 		url: '/blog',
 	},
 	{
-		name: 'Playground',
-		url: 'https://yashjawale.github.io/playground',
+		name: 'IPD Platform',
+		url: 'https://ipd.cdut-sinobritish.com',
 	},
 ]

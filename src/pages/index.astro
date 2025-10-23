@@ -16,11 +16,13 @@ const posts = (await getCollection('blog'))
 	>
 		<div>
 			<p class="block text-3xl opacity-70 mt-9 mb-4">Hi!, I'm</p>
-			<h1 class="text-8xl font-bold leading-none">Yash Jawale</h1>
+			<h1 class="text-8xl font-bold leading-none">Javier Jia</h1>
 		</div>
-		<p class="text-2xl max-w-2xl font-light leading-normal">
-			A student & software engineer specialising in Web Development.
-		</p>
+		<div class="text-xl max-w-3xl font-light leading-relaxed space-y-2">
+			<p>Module Leader - CHC5056 Innovative Product Development</p>
+			<p>BSc (Hons) Computer Science and BSc (Hons) Software Engineering</p>
+			<p>Chengdu University of Technology & Oxford Brookes University</p>
+		</div>
 		<div class="flex flex-wrap gap-8">
 			{
 				SocialLinks.map((link) => (
@@ -51,40 +53,31 @@ const posts = (await getCollection('blog'))
 	<!-- Recent Posts Section -->
 	<section class="app-container py-42 grid lg:grid-cols-2 gap-28 lg:gap-10">
 		<div class="space-y-6">
-			<h2 class="section-title">Explore Playground</h2>
+			<h2 class="section-title">Explore IPD Platform</h2>
 			<p class="text-lg max-w-xl pb-4">
-				A collection of interactive simulators demonstrating CS Concepts. Feel
-				free to contribute your favourite problems on GitHub!
+				Innovative Product Development platform - a comprehensive resource for
+				students and educators in product development and software engineering.
 			</p>
 			<a
 				class="btn-secondary"
-				href="https://yashjawale.github.io/playground/"
+				href="https://ipd.cdut-sinobritish.com/"
 				target="_blank"
-				>Go to Playground
+				>Go to IPD Platform
 				<Icon size={20} name="mdi:arrow-right" />
 			</a>
 		</div>
 		<div class="space-y-6">
 			<h2 class="section-title">Get in touch</h2>
 			<p class="text-lg max-w-xl">
-				Use the buttons below for my resume & email.
+				Feel free to reach out via email for collaboration or inquiries.
 			</p>
-			<div class="flex flex-wrap mt-auto space-x-4">
+			<div class="flex flex-wrap mt-auto">
 				<a
 					class="btn-primary"
-					href="mailto:yash25.j@gmail.com"
-					download
+					href="mailto:javier@zy.cdut.edu.cn"
 					target="_blank"
 					>Get in touch
 					<Icon height={20} name="mdi:email" />
-				</a>
-				<a
-					class="btn-secondary"
-					href="https://yashjawale.github.io/resume/cv.pdf"
-					download
-					target="_blank"
-					>Download Resume
-					<Icon height={20} name="mdi:arrow-collapse-down" />
 				</a>
 			</div>
 		</div>

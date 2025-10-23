@@ -1,4 +1,4 @@
-# Yash Jawale Personal Website - GitHub Copilot Instructions
+# Javier Jia Personal Website - GitHub Copilot Instructions
 
 **Always follow these instructions first** and only fallback to additional search and context gathering if the information in these instructions is incomplete or found to be in error.
 
@@ -191,7 +191,7 @@ Runs on push to main branch using `withastro/action` for building and deployment
 
 - Static site generation (SSG)
 - Output: `static` mode in `dist/` directory
-- Site URL: `https://yashjawale.github.io`
+- Site URL: `https://javierjia.github.io`
 
 ### Styling
 
