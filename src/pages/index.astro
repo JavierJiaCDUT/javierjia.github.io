@@ -12,24 +12,48 @@ const posts = (await getCollection('blog'))
 
 <BaseLayout>
 	<main
-		class="app-container flex flex-col gap-12 justify-center py-36 md:py-48 pt-44 md:pt-56 relative"
+		class="app-container flex flex-col gap-8 justify-center py-36 md:py-48 pt-44 md:pt-56 relative"
 	>
-		<div>
-			<p class="block text-3xl opacity-70 mt-9 mb-4">Hi!, I'm</p>
-			<h1 class="text-8xl font-bold leading-none">Javier Jia</h1>
+		<!-- Name and Title -->
+		<div class="space-y-4">
+			<p class="block text-3xl opacity-70">Hi!, I'm</p>
+			<h1 class="text-7xl md:text-8xl font-bold leading-none">Javier Jia</h1>
+			<p class="text-2xl md:text-3xl opacity-80 font-light">
+				Educator | Innovator | Software Engineering Enthusiast
+			</p>
 		</div>
-		<div class="text-xl max-w-3xl font-light leading-relaxed space-y-2">
-			<p>Module Leader - CHC5056 Innovative Product Development</p>
-			<p>BSc (Hons) Computer Science and BSc (Hons) Software Engineering</p>
-			<p>Chengdu University of Technology & Oxford Brookes University</p>
+
+		<!-- Current Role -->
+		<div class="max-w-3xl space-y-3">
+			<p class="text-xl font-medium text-primary dark:text-primary-dark">
+				Module Leader - CHC5056 Innovative Product Development
+			</p>
+			<p class="text-lg opacity-90">
+				BSc (Hons) Computer Science and BSc (Hons) Software Engineering
+			</p>
+			<p class="text-lg opacity-90">
+				Chengdu University of Technology & Oxford Brookes University
+			</p>
 		</div>
-		<div class="flex flex-wrap gap-8">
+
+		<!-- Brief Introduction -->
+		<div class="max-w-3xl">
+			<p class="text-lg leading-relaxed opacity-80">
+				Passionate about innovative product development and computer science education.
+				I focus on teaching students how to design, develop, and deploy real-world software
+				solutions while fostering creativity and critical thinking.
+			</p>
+		</div>
+
+		<!-- Social Links -->
+		<div class="flex flex-wrap gap-6 items-center">
 			{
 				SocialLinks.map((link) => (
 					<a
-						class="text-xl text-primary dark:text-primary-dark underline hover:underline underline-offset-4"
+						class="text-lg text-primary dark:text-primary-dark hover:underline underline-offset-4 transition-all"
 						href={link.url}
 						target="_blank"
+						rel="noopener noreferrer"
 					>
 						{link.name}
 					</a>
