@@ -1,0 +1,201 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import { Icon } from 'astro-icon/components'
+import { SocialLinks } from '../consts'
+---
+
+<BaseLayout>
+	<main class="app-container py-32 md:py-40">
+		<!-- Header Section -->
+		<div class="max-w-4xl mx-auto space-y-12">
+			<div class="space-y-6">
+				<h1 class="text-5xl md:text-6xl font-bold">About Me</h1>
+				<p class="text-2xl md:text-3xl opacity-80 font-light">
+					Educator | Innovator | Software Engineering Enthusiast
+				</p>
+			</div>
+
+			<!-- Introduction -->
+			<section class="space-y-4">
+				<h2 class="text-3xl font-semibold">Introduction</h2>
+				<div class="text-lg leading-relaxed space-y-4 opacity-90">
+					<p>
+						Hello! I'm Javier Jia, a Module Leader at the Sino-British College,
+						Chengdu University of Technology, where I teach CHC5056 Innovative
+						Product Development. My passion lies in bridging the gap between
+						theoretical computer science education and real-world software
+						engineering practice.
+					</p>
+					<p>
+						I specialize in guiding students through the entire product
+						development lifecycle, from ideation and design thinking to
+						implementation and deployment. My teaching philosophy centers on
+						hands-on learning, fostering creativity, and developing critical
+						thinking skills that prepare students for the challenges of modern
+						software development.
+					</p>
+				</div>
+			</section>
+
+			<!-- Current Role -->
+			<section class="space-y-4">
+				<h2 class="text-3xl font-semibold">Current Role</h2>
+				<div class="space-y-3 text-lg">
+					<div>
+						<p class="font-medium text-primary dark:text-primary-dark">
+							Module Leader - CHC5056 Innovative Product Development
+						</p>
+						<p class="opacity-90">
+							Sino-British College, Chengdu University of Technology
+						</p>
+					</div>
+					<div class="opacity-90 leading-relaxed">
+						<p>
+							In my role, I develop and deliver comprehensive curriculum for
+							BSc (Hons) Computer Science and BSc (Hons) Software Engineering
+							students. The program is a collaboration between Chengdu
+							University of Technology and Oxford Brookes University, combining
+							Chinese and British educational excellence.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Teaching Focus -->
+			<section class="space-y-4">
+				<h2 class="text-3xl font-semibold">Teaching Focus</h2>
+				<div class="grid md:grid-cols-2 gap-6">
+					<div class="space-y-2 p-6 border border-foreground/10 dark:border-foreground-dark/10 rounded-lg">
+						<div class="flex items-center gap-3">
+							<Icon name="mdi:lightbulb-on" class="text-3xl text-primary dark:text-primary-dark" />
+							<h3 class="text-xl font-medium">Product Innovation</h3>
+						</div>
+						<p class="opacity-80">
+							Teaching students to identify problems, ideate solutions, and
+							develop innovative products using design thinking methodologies.
+						</p>
+					</div>
+					<div class="space-y-2 p-6 border border-foreground/10 dark:border-foreground-dark/10 rounded-lg">
+						<div class="flex items-center gap-3">
+							<Icon name="mdi:code-braces" class="text-3xl text-primary dark:text-primary-dark" />
+							<h3 class="text-xl font-medium">Software Engineering</h3>
+						</div>
+						<p class="opacity-80">
+							Emphasizing best practices in software development, including
+							agile methodologies, version control, and collaborative coding.
+						</p>
+					</div>
+					<div class="space-y-2 p-6 border border-foreground/10 dark:border-foreground-dark/10 rounded-lg">
+						<div class="flex items-center gap-3">
+							<Icon name="mdi:rocket-launch" class="text-3xl text-primary dark:text-primary-dark" />
+							<h3 class="text-xl font-medium">Project-Based Learning</h3>
+						</div>
+						<p class="opacity-80">
+							Guiding students through real-world projects, from conception
+							to deployment, fostering practical skills and confidence.
+						</p>
+					</div>
+					<div class="space-y-2 p-6 border border-foreground/10 dark:border-foreground-dark/10 rounded-lg">
+						<div class="flex items-center gap-3">
+							<Icon name="mdi:account-group" class="text-3xl text-primary dark:text-primary-dark" />
+							<h3 class="text-xl font-medium">Collaborative Development</h3>
+						</div>
+						<p class="opacity-80">
+							Teaching teamwork, code reviews, and effective communication
+							in distributed development environments.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Research & Interests -->
+			<section class="space-y-4">
+				<h2 class="text-3xl font-semibold">Research & Interests</h2>
+				<div class="text-lg leading-relaxed space-y-4 opacity-90">
+					<p>
+						My research interests include innovative pedagogical approaches in
+						computer science education, particularly in how students can develop
+						entrepreneurial mindsets while learning software engineering.
+					</p>
+					<ul class="list-disc list-inside space-y-2 ml-4">
+						<li>Computer Science Education and Pedagogy</li>
+						<li>Design Thinking in Software Development</li>
+						<li>Agile and Lean Methodologies</li>
+						<li>Full-Stack Web Development</li>
+						<li>Student Project Supervision and Mentorship</li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- Connect -->
+			<section class="space-y-4">
+				<h2 class="text-3xl font-semibold">Let's Connect</h2>
+				<div class="space-y-4">
+					<p class="text-lg opacity-90">
+						I'm always interested in connecting with fellow educators,
+						researchers, and students. Feel free to reach out for collaboration,
+						academic discussions, or project inquiries.
+					</p>
+					<div class="flex flex-wrap gap-6 items-center">
+						<a
+							href="mailto:javier@zy.cdut.edu.cn"
+							class="btn-primary"
+							>
+							<Icon name="mdi:email" class="text-xl" />
+							Contact Me
+						</a>
+						{
+							SocialLinks.map((link) => (
+								<a
+									class="text-lg text-primary dark:text-primary-dark hover:underline underline-offset-4 transition-all"
+									href={link.url}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									{link.name}
+								</a>
+							))
+						}
+					</div>
+				</div>
+			</section>
+
+			<!-- Explore More -->
+			<section class="space-y-4 pt-8 border-t border-foreground/10 dark:border-foreground-dark/10">
+				<h2 class="text-3xl font-semibold">Explore More</h2>
+				<div class="grid md:grid-cols-2 gap-6">
+					<a
+						href="/blog"
+						class="group p-6 border border-foreground/10 dark:border-foreground-dark/10 rounded-lg hover:border-primary dark:hover:border-primary-dark transition-all"
+					>
+						<div class="flex items-center gap-3 mb-3">
+							<Icon name="mdi:post" class="text-3xl text-primary dark:text-primary-dark" />
+							<h3 class="text-2xl font-medium group-hover:text-primary dark:group-hover:text-primary-dark transition-colors">
+								Blog
+							</h3>
+						</div>
+						<p class="opacity-80">
+							Read my thoughts on education, technology, and software development.
+						</p>
+					</a>
+					<a
+						href="https://ipd.cdut-sinobritish.com/"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="group p-6 border border-foreground/10 dark:border-foreground-dark/10 rounded-lg hover:border-primary dark:hover:border-primary-dark transition-all"
+					>
+						<div class="flex items-center gap-3 mb-3">
+							<Icon name="mdi:school" class="text-3xl text-primary dark:text-primary-dark" />
+							<h3 class="text-2xl font-medium group-hover:text-primary dark:group-hover:text-primary-dark transition-colors">
+								IPD Platform
+							</h3>
+						</div>
+						<p class="opacity-80">
+							Explore our Innovative Product Development resources and tools.
+						</p>
+					</a>
+				</div>
+			</section>
+		</div>
+	</main>
+</BaseLayout>

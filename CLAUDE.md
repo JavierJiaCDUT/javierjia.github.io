@@ -89,7 +89,11 @@ These plugins automatically enhance blog posts with computed metadata during the
    coverImageCredit: 'Photographer Name, Source' # optional
    ---
    ```
-3. Add cover image at `src/assets/blogimages/<your-slug>/cover.jpg` (recommended: 853x480px)
+3. Add cover image at `src/assets/blogimages/<your-slug>/cover.jpg`
+   - **Required aspect ratio**: 16:9 (e.g., 1920x1080, 1280x720, 853x480)
+   - Images are automatically cropped using `aspect-video` and `object-cover`
+   - Recommended minimum width: 1280px for high-quality displays
+   - Supported formats: JPG, PNG, GIF
 4. For images with captions: `![Alt text](../../assets/blogimages/<your-slug>/image.ext)`
 5. Reading time and last modified date are automatically calculated
 6. Run `npm run astro check` to validate schema
