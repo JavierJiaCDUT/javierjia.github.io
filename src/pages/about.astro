@@ -136,7 +136,7 @@ import { SocialLinks } from '../consts'
 						researchers, and students. Feel free to reach out for collaboration,
 						academic discussions, or project inquiries.
 					</p>
-					<div class="flex flex-wrap gap-6 items-center">
+					<div class="flex flex-wrap gap-4 items-center">
 						<a
 							href="mailto:javier@zy.cdut.edu.cn"
 							class="btn-primary"
@@ -147,11 +147,12 @@ import { SocialLinks } from '../consts'
 						{
 							SocialLinks.map((link) => (
 								<a
-									class="text-lg text-primary dark:text-primary-dark hover:underline underline-offset-4 transition-all"
+									class="btn-secondary"
 									href={link.url}
 									target="_blank"
 									rel="noopener noreferrer"
 								>
+									<Icon name="mdi:github" class="text-xl" />
 									{link.name}
 								</a>
 							))
