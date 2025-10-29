@@ -4,14 +4,14 @@ import { Icon } from 'astro-icon/components'
 import ThemeSelector from './ThemeSelector.astro'
 import { WebsiteLinks } from '../consts'
 import { Image } from 'astro:assets'
-import LogoWebP from '../assets/logo.webp'
+import LogoSVG from '../assets/deepseek.svg'
 ---
 
 <header class="fixed top-0 w-full z-40 bg-background/95 dark:bg-background-dark/95 backdrop-blur-sm transition-shadow duration-300" id="navbar">
 	<nav>
 		<div class="app-container flex justify-between items-center py-5">
 			<a href="/" aria-label="Home">
-				<Image src={LogoWebP} alt="Javier Jia Logo" width={55} height={55} />
+				<Image src={LogoSVG} alt="Javier Jia Logo" height={55} />
 			</a>
 			<div class="gap-8 hidden md:flex items-center">
 				{
